@@ -75,8 +75,8 @@ const Project = ({ language, project, onClose }) => {
       <div className="flex justify-center mb-[6rem] bg-[--metal-100] py-10 md:mb-0">
         <Image
           src={project.image}
-          width={2000}
-          height={2000}
+          width={3000}
+          height={3000}
           alt="Zent screenshot"
           className="w-[140rem] p-[2rem] rounded-[2px] mx-auto xl:w-screen object-cover"
           style={{ objectPosition: '50% 0%' }}
@@ -92,9 +92,13 @@ const Project = ({ language, project, onClose }) => {
                 className="grid grid-cols-[2fr_1fr] gap-[6rem] items-center mb-[8rem] lg:grid-cols-1 md:gap-10 md:mb-[4rem]"
               >
                 <motion.div
-                  initial={{ opacity: 0 }}
+                  initial={{
+                    opacity: 0,
+                    x: -50,
+                  }}
                   whileInView={{
                     opacity: 1,
+                    x: 0,
                     transition: {
                       duration: 1,
                     },
@@ -104,9 +108,9 @@ const Project = ({ language, project, onClose }) => {
                   <Image
                     src={item.image}
                     alt="zent screenshot"
-                    width={600}
-                    height={600}
-                    className="border-[--metal-20] border-[2px] rounded-[2px]"
+                    width={1000}
+                    height={700}
+                    className="shadow-lg rounded-[2px]"
                   />
                 </motion.div>
                 <motion.div
