@@ -22,7 +22,7 @@ const Button = ({ size, type, label, onClick, className }) => {
     >
       {label.map((item, index) => (
         <span
-          key={index}
+          key={`button-label-${index}`}
           className={`${
             typeof item === 'string' && size !== 'small'
               ? 'pt-[2px]'

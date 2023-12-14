@@ -32,17 +32,16 @@ const Hero = ({ heading, cta, links, language, handleChangeLanguage }) => {
           <div className="md:text-center md:mt-[15vh]">
             <h1>
               {splitTitle.map((word, index) => (
-                <span key={index}>
-                  <motion.span
-                    variants={variants}
-                    initial="initial"
-                    animate="animate"
-                    transition={{ duration: 1, delay: index * 0.2 }}
-                    style={{ display: 'inline-block', marginRight: '16px' }}
-                  >
-                    {word}{' '}
-                  </motion.span>
-                </span>
+                <motion.span
+                  key={word}
+                  variants={variants}
+                  initial="initial"
+                  animate="animate"
+                  transition={{ duration: 1, delay: index * 0.2 }}
+                  style={{ display: 'inline-block', marginRight: '16px' }}
+                >
+                  {word}{' '}
+                </motion.span>
               ))}
             </h1>
             <motion.div
