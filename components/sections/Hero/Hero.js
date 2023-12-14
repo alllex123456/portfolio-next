@@ -33,11 +33,11 @@ const Hero = ({ heading, cta, links, language, handleChangeLanguage }) => {
             <h1>
               {splitTitle.map((word, index) => (
                 <motion.span
+                  key={word}
                   variants={variants}
                   initial="initial"
                   animate="animate"
                   transition={{ duration: 1, delay: index * 0.2 }}
-                  key={index}
                   style={{ display: 'inline-block', marginRight: '16px' }}
                 >
                   {word}{' '}
