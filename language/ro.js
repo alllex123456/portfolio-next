@@ -95,7 +95,7 @@ export default {
       id: 'zent',
       title: 'Zent Freelance',
       subtitle: 'Software conceput pentru traducătorii profesioniști',
-      image: '/images/zent-dashboard.png',
+      image: '/images/zent-dashboard.jpg',
       stack: ['React', 'Express', 'Mongoose'],
       highlights: 'Caracteristici centrale',
       features: [
@@ -108,7 +108,7 @@ export default {
       details: [
         {
           title: 'așteptări',
-          image: '/images/zent-orders-list.png',
+          image: '/images/zent-orders-list.jpg',
           content: [
             'Este necesar un program care să organizeze comenzile și să automatizeze gestionarea clienților.',
             'Acesta ar trebui să aibă o bază de date pentru a stoca toate datele utilizatorilor.',
@@ -118,7 +118,7 @@ export default {
         },
         {
           title: 'logică',
-          image: '/images/zent-user-profile.png',
+          image: '/images/zent-user-profile.jpg',
           content: [
             'Am configurat o aplicație MERN cu React pe frontend și un API Express pe backend. ',
             'Am implementat Material UI ca bibliotecă de stil pentru componente React.',
@@ -128,7 +128,7 @@ export default {
         },
         {
           title: 'rezultat',
-          image: '/images/zent-invoice-page.png',
+          image: '/images/zent-invoice-page.jpg',
           content: [
             'Management complet pentru clienți și comenzi.',
             'Înregistrări contabile generate pe baza fluxului operațional.',
@@ -144,7 +144,7 @@ export default {
   ],
   aboutme: {
     title: 'despre mine',
-    image: '/images/aboutme-image.png',
+    image: '/images/aboutme-image.jpg',
     content: [
       'Sunt un programator autodidact cu istoric în domeniul traducerilor, stabilit în prezent în București, România.',
       'Călătoria mea a început atunci când am recunoscut potențialul de a-mi îmbunătăți modul de lucru prin intermediul unor instrumente inovatoare. Acest lucru m-a determinat să învăț domeniul dezvoltării web, începând cu HTML și CSS avansat pentru a-mi optimiza site-ul personal.',
