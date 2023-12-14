@@ -7,7 +7,7 @@ const DesktopNavigation = ({ links, lang }) => {
       {links.map((link, index) => (
         <li key={index}>
           <Link
-            href={`/?lang=${lang}${link.href}`}
+            href={link.href}
             className="font-bold transition delay-100 hover:text-[--accent]"
           >
             {link.label[0].toUpperCase() + link.label.slice(1)}
