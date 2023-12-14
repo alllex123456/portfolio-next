@@ -21,7 +21,7 @@ export default {
     liveDemo: 'Live demo',
   },
   hero: {
-    title: 'passionate web developer crafting cutting-edge solutions',
+    title: 'Passionate Web Developer Crafting Cutting-edge Solutions',
     cta: 'Check my capabilities',
   },
   design: {

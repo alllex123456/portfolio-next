@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
 import { Toaster } from 'react-hot-toast';
 
 import About from '@/components/sections/About/About';
@@ -17,26 +16,15 @@ import en from '../language/en';
 import ro from '../language/ro';
 
 export default function Home() {
-  const lang = useSearchParams();
-  const [language, setLanguage] = useState(lang.get('lang'));
-  const router = useRouter();
+  const [language, setLanguage] = useState(
+    Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Bucharest'
+      ? ro
+      : en
+  );
 
-  useEffect(() => {
-    router.push(
-      Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Bucharest'
-        ? '?lang=ro'
-        : '?lang=en'
-    );
-
-    setLanguage(
-      Intl.DateTimeFormat().resolvedOptions().timeZone === 'Europe/Bucharest'
-        ? ro
-        : en
-    );
-  }, [router]);
-
-  const handleChangeLanguage = (lang) =>
-    lang === 'en' ? setLanguage(en) : setLanguage(ro);
+  const handleChangeLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === en ? ro : en));
+  };
 
   if (typeof language !== 'object' || language === null) return;
 

@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 
 import Link from 'next/link';
 import Logo from '../../assets/vectors/Logo';
 import DesktopNavigation from './DesktopNavigation';
 import MobileNavigation from './MobileNavigation';
-import { AnimatePresence } from 'framer-motion';
+import LanguageIcon from '@/assets/vectors/LanguageIcon';
 
-const Header = ({ links, handleChangeLanguage }) => {
+const Header = ({ links, language, handleChangeLanguage }) => {
   const searchParams = useSearchParams();
   const lang = searchParams.get('lang');
   const [openMobileNav, setOpenMobileNav] = useState(false);
@@ -26,10 +26,24 @@ const Header = ({ links, handleChangeLanguage }) => {
           onClick={() => setOpenMobileNav(false)}
         ></div>
       )}
-      <Link href={`/?lang=${lang}`}>
+      <Link href="{`/?lang=${language}`}">
         <Logo className="stroke-[--metal-100] md:w-[3rem]" />
       </Link>
-      <DesktopNavigation lang={lang} links={links} />
+      <DesktopNavigation lang={language} links={links} />
+      <div className="relative flex items-center justify-center md:hidden">
+        <LanguageIcon
+          width={60}
+          height={60}
+          className="absolute opacity-10"
+          fill="#127369"
+        />
+        <button
+          className="relative z-10 font-heading text-[--accent] text-[1.8rem] text-[--accent] font-bold cursor-pointer"
+          onClick={handleChangeLanguage}
+        >
+          {language === 'en' ? 'RO' : 'EN'}
+        </button>
+      </div>
       <div onClick={() => setOpenMobileNav(true)} className="hidden md:block">
         <svg
           width="26"
@@ -50,6 +64,8 @@ const Header = ({ links, handleChangeLanguage }) => {
       <AnimatePresence>
         {openMobileNav && (
           <MobileNavigation
+            language={language}
+            handleChangeLanguage={handleChangeLanguage}
             links={links}
             onClose={() => setOpenMobileNav(false)}
           />

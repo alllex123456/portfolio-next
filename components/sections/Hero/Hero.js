@@ -27,7 +27,11 @@ const Hero = ({ heading, cta, links, language, handleChangeLanguage }) => {
   return (
     <div className="min-h-screen w-[100%] lg:min-h-0 hero overflow-hidden">
       <div className="max-w-[140rem] mx-auto px-[2rem]">
-        <Header links={links} handleChangeLanguage={handleChangeLanguage} />
+        <Header
+          links={links}
+          language={language}
+          handleChangeLanguage={handleChangeLanguage}
+        />
         <div className="h-[90vh] grid grid-cols-[2fr_1fr] gap-10 items-center justify-between md:grid-cols-1 md:items-start">
           <div className="md:text-center md:mt-[15vh]">
             <h1>{heading}</h1>
