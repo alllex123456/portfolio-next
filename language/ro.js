@@ -150,7 +150,7 @@ export default {
       'Călătoria mea a început atunci când am recunoscut potențialul de a-mi îmbunătăți modul de lucru prin intermediul unor instrumente inovatoare. Acest lucru m-a determinat să învăț domeniul dezvoltării web, începând cu HTML și CSS avansat pentru a-mi optimiza site-ul personal.',
       'În căutarea eficienței, am reușit să stăpânesc JavaScript în mai puțin de un an, permițându-mi să dezvolt soluții software compacte în scopuri recreative.',
       'Apoi, am făcut saltul în domeniul framework-urilor JavaScript, în special React, care mi-a dus fascinația pentru proiectarea de software la un nou nivel.',
-      'În timp, pasiunea mea s-a cristalizat și am descoperit că adevărata mea vocație constă în conceperea și realizarea de soluții software de impact',
+      'În timp, pasiunea mea s-a cristalizat și am descoperit că adevărata mea vocație constă în conceperea și realizarea de soluții software de impact.',
       'De-a lungul anilor, mi-am perfecționat abilitățile lucrând cu tehnologii tot mai moderne, afirmându-mi angajamentul de a concepe programe care să îmbunătățească semnificativ viața și eforturile profesionale ale oamenilor.',
     ],
   },
@@ -162,7 +162,7 @@ export default {
       message: 'mesajul tău...',
     },
     content: [
-      'Pentru un răspuns cuprinzător la solicitările tale, te rog să precizezi tipul de proiect de care ești interesat: blog website aplicație software',
+      'Pentru un răspuns cuprinzător la solicitările tale, te rog să precizezi tipul de proiect de care ești interesat: blog*website*aplicație software',
       'Este important să menționez că toate soluțiile mele sunt personalizate și folosesc 100% cod. Nu lucrez cu no-code, low-code, sisteme de content management, teme sau platforme de e-commerce.',
       'Oferte ferme pot fi făcute doar după discuții suplimentare.',
       'Sunt disponibil și voi răspunde cât mai repede, de luni până vineri, ora Bucureștiului.',
