@@ -42,7 +42,7 @@ const Project = ({ language, project, onClose }) => {
       <div className="max-w-[140rem] py-[4rem] px-[2rem] mx-auto md:py-10">
         <Button
           type="outline"
-          label={[<ArrowLeft />, language.buttons.back]}
+          label={language.buttons.back}
           onClick={onClose}
         />
         <div className="flex gap-4 flex-wrap justify-between items-center mb-10 mt-[8rem] md:mt-[3rem] md:mb-[2rem]">

@@ -22,20 +22,13 @@ const Button = ({ size, type, label, onClick, className }) => {
       }`}
       onClick={onClick}
     >
-      {label.map((item, index) => {
-        return (
-          <span
-            key={typeof item === 'string' ? item : index}
-            className={`${
-              typeof item === 'string' && size !== 'small'
-                ? 'pt-[2px]'
-                : 'pt-[4px]'
-            } ${typeof item !== 'string' ? 'pb-2' : ''}`}
-          >
-            {typeof item === 'string' ? item.toUpperCase() : item}
-          </span>
-        );
-      })}
+      <span
+        className={`capitalize pb-2 ${
+          size !== 'small' ? 'pt-[2px]' : 'pt-[4px]'
+        }`}
+      >
+        {label}
+      </span>
     </button>
   );
 };

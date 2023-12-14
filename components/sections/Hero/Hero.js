@@ -50,11 +50,7 @@ const Hero = ({ heading, cta, links, language, handleChangeLanguage }) => {
               transition={{ duration: 1, delay: 2 }}
             >
               <Link href="#capabilities">
-                <Button
-                  customClassName="mt-10"
-                  type="outline"
-                  label={[cta, <ArrowDown />]}
-                />
+                <Button customClassName="mt-10" type="outline" label={cta} />
               </Link>
             </motion.div>
           </div>
