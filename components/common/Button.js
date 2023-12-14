@@ -25,7 +25,7 @@ const Button = ({ size, type, label, onClick, className }) => {
       {label.map((item, index) => {
         return (
           <span
-            key={ids[index]}
+            key={typeof item === 'string' ? item : index}
             className={`${
               typeof item === 'string' && size !== 'small'
                 ? 'pt-[2px]'
