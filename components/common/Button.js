@@ -22,7 +22,7 @@ const Button = ({ size, type, label, onClick, className }) => {
     >
       {label.map((item, index) => (
         <span
-          key={`button-label-${index}`}
+          key={Math.random()}
           className={`${
             typeof item === 'string' && size !== 'small'
               ? 'pt-[2px]'
