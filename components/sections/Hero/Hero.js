@@ -38,7 +38,7 @@ const Hero = ({ heading, cta, links, language, handleChangeLanguage }) => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 2 }}
+              transition={{ duration: 1 }}
             >
               <Link href="#capabilities">
                 <Button customClassName="mt-10" type="outline" label={cta} />
