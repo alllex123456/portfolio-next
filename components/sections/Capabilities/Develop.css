@@ -1,0 +1,12 @@
+.develop {
+  background: linear-gradient(
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.8) 25%,
+      rgba(255, 255, 255, 0.7) 50%,
+      rgba(255, 255, 255, 0.8) 75%,
+      rgba(255, 255, 255, 1) 100%
+    ),
+    url('/images/background-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

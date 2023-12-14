@@ -1,0 +1,10 @@
+.contact {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.95) 50%
+    ),
+    url('/images/background-contact.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

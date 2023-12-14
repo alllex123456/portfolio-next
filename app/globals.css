@@ -1,27 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --metal-100: #10403b;
+  --metal-80: #4c5958;
+  --metal-60: #127369;
+  --metal-40: #8aa6a3;
+  --metal-20: #bfbfbf;
+  --metal-10: rgba(206, 206, 206, 0.5);
+  --metal-5: rgba(206, 206, 206, 0.15);
+  --accent: #3924a4;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  background-color: #fff;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  color: var(--metal-60);
+}
+
+h1 {
+  font-size: 7.6rem;
+  font-family: 'Montserrat', serif;
+  color: var(--metal-100);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 6.4rem;
+  font-family: 'Montserrat', serif;
+  color: var(--metal-100);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 5.2rem;
+  font-family: 'Montserrat', serif;
+  color: var(--metal-80);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 4.4rem;
+  font-family: 'Montserrat', serif;
+  color: var(--metal-80);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 3.6rem;
+  font-family: 'Montserrat', serif;
+  color: var(--metal-80);
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 2.8rem;
+  font-family: 'Montserrat', serif;
+  color: var(--metal-80);
+}
+
+p,
+li {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+h1 {
+  @apply xl:text-[6rem] md:text-[4rem];
+}
+
+h2 {
+  @apply md:!text-[4rem];
+}
+
+h4 {
+  @apply md:!text-[3.4rem];
+}
+
+h5 {
+  @apply md:!text-[2rem];
+}
+
+.section-size {
+  @apply min-h-screen w-[100%] lg:min-h-0 xl:py-[8rem] md:py-[4rem];
+}
+
+.section-align {
+  @apply p-[2rem] max-w-[140rem] mx-auto;
 }

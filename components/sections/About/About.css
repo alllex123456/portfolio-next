@@ -1,0 +1,10 @@
+.about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.7) 60%,
+      rgba(255, 255, 255, 1) 90%
+    ),
+    url('/images/background-about.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

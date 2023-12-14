@@ -1,0 +1,9 @@
+.work {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9) 0%,
+      rgba(255, 255, 255, 0.85) 100%
+    ),
+    url('/images/background-work.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

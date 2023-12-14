@@ -1,0 +1,11 @@
+.hero {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.7) 60%,
+      #fff 99.41%
+    ),
+    url('/images/background-hero.jpeg'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
