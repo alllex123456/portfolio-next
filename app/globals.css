@@ -95,7 +95,7 @@ h5 {
 }
 
 .section-size {
-  @apply min-h-screen w-[100%] lg:min-h-0 xl:py-[8rem] md:py-[4rem];
+  @apply min-h-screen w-[100%] lg:min-h-0 py-[12rem] xl:py-[8rem] md:py-[4rem];
 }
 
 .section-align {
