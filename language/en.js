@@ -171,6 +171,7 @@ export default {
     formMessages: {
       errorEmail: 'The email address is not valid',
       errorName: 'The name should be at least two characters long',
+      error: 'You have empty, automatically filled in or invalid fields',
       loading: 'Sending...',
       successSent: 'Thank you for contacting me. Will get back to you asap!',
       errorSent:

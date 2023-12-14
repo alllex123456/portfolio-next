@@ -170,6 +170,7 @@ export default {
     formMessages: {
       errorEmail: 'Adresa de e-mail introdusă nu este validă',
       errorName: 'Numele trebuie să conțină cel puțin două caractere',
+      error: 'Există câmpuri necompletate, completate automat sau invalide.',
       loading: 'Se trimite...',
       successSent: 'Îți mulțumesc pentru mesaj. Îți voi răspunde curând!',
       errorSent:

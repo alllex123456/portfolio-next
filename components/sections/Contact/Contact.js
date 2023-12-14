@@ -13,7 +13,7 @@ const Contact = ({ title, contactme, cta }) => {
   const [inputs, setInputs] = useState({
     email: { value: '', isValid: false },
     name: { value: '', isValid: false },
-    message: { value: '', isValid: true },
+    message: { value: '', isValid: false },
   });
 
   const [touched, setTouched] = useState({
@@ -25,7 +25,7 @@ const Contact = ({ title, contactme, cta }) => {
   const handleChangeInput = (e) => {
     setInputs({
       ...inputs,
-      [e.target.name]: { value: e.target.value },
+      [e.target.name]: { ...inputs[e.target.name], value: e.target.value },
     });
   };
 
@@ -51,6 +51,12 @@ const Contact = ({ title, contactme, cta }) => {
         ...inputs,
         [fieldName]: { value, isValid },
       });
+    } else if (fieldName === 'message') {
+      const isValid = value.length > 5;
+      setInputs({
+        ...inputs,
+        [fieldName]: { value, isValid },
+      });
     }
   };
 
@@ -58,6 +64,13 @@ const Contact = ({ title, contactme, cta }) => {
     event.preventDefault();
 
     const loadingToast = toast.loading(contactme.formMessages.loading);
+
+    const formIsValid = Object.values(inputs).every((field) => field.isValid);
+
+    if (!formIsValid)
+      return toast.error(contactme.formMessages.error, {
+        id: loadingToast,
+      });
 
     const request = await fetch('/api/send', {
       method: 'POST',
@@ -161,6 +174,7 @@ const Contact = ({ title, contactme, cta }) => {
             placeholder={contactme.labels.message}
             value={inputs.message.value}
             onChange={handleChangeInput}
+            onBlur={handleFieldValid}
           />
           <Button type="solid" label={[cta]} customClassName="w-max" />
         </form>
