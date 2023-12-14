@@ -35,7 +35,7 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <motion.circle cx="108" cy="136.5" r="25" fill="#12403b" />
         <motion.circle cx="108" cy="136.5" r="9" fill="#fff" />
@@ -51,13 +51,13 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 1.5 }}
+        transition={{ duration: 0.5, delay: 1 }}
       />
       <motion.g
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 1 }}
       >
         <motion.circle cx="64.5" cy="212" r="25" fill="#12403b" />
         <motion.circle cx="64.5" cy="212" r="9" fill="#fff" />
@@ -83,7 +83,7 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
       />
       <motion.g
         variants={variants}
@@ -105,7 +105,7 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
       />
       <motion.g
         variants={variants}
@@ -120,7 +120,7 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
       >
         <motion.circle cx="201" cy="341" r="25" fill="#12403b" />
         <motion.circle cx="201" cy="341" r="9" fill="#fff" />
@@ -146,13 +146,13 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 2 }}
+        transition={{ duration: 0.5, delay: 1 }}
       />
       <motion.g
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 1.5 }}
+        transition={{ duration: 0.5, delay: 1 }}
       >
         <motion.circle cx="159" cy="412" r="25" fill="#12403b" />
         <motion.circle cx="159" cy="412" r="9" fill="#fff" />
@@ -168,7 +168,7 @@ function HeroSVG({ className }) {
         variants={variants}
         initial="initial"
         animate="animate"
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       />
       <motion.circle
         cx="99"

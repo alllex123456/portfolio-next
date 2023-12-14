@@ -95,7 +95,7 @@ export default {
       id: 'zent',
       title: 'Zent Freelance',
       subtitle: 'Software designed for professional translators',
-      image: '/images/zent-dashboard.png',
+      image: '/images/zent-dashboard.jpg',
       stack: ['React', 'Express', 'Mongoose'],
       highlights: 'highlights',
       features: [
@@ -108,7 +108,7 @@ export default {
       details: [
         {
           title: 'expectations',
-          image: '/images/zent-orders-list.png',
+          image: '/images/zent-orders-list.jpg',
           content: [
             'A program was needed to organize orders and automate client management.',
             ,
@@ -119,7 +119,7 @@ export default {
         },
         {
           title: 'logic',
-          image: '/images/zent-user-profile.png',
+          image: '/images/zent-user-profile.jpg',
           content: [
             "I've set up a MERN app with React on the front end and an Express API on the back end. ",
             'Implemented Material UI as my component styling library.',
@@ -129,7 +129,7 @@ export default {
         },
         {
           title: 'output',
-          image: '/images/zent-invoice-page.png',
+          image: '/images/zent-invoice-page.jpg',
           content: [
             'Full client and order management.',
             'Accounting records generated based on the operational flow.',
@@ -145,7 +145,7 @@ export default {
   ],
   aboutme: {
     title: 'about me',
-    image: '/images/aboutme-image.png',
+    image: '/images/aboutme-image.jpg',
     content: [
       'I am a self-taught programmer with a background in translation, currently based in Bucharest, Romania.',
       'My journey began when I recognized the potential to enhance my workflow through innovative tools. This drove me to embark on a learning path, starting with HTML and advanced CSS to optimize my personal website.',

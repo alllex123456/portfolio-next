@@ -30,20 +30,7 @@ const Hero = ({ heading, cta, links, language, handleChangeLanguage }) => {
         <Header links={links} handleChangeLanguage={handleChangeLanguage} />
         <div className="h-[90vh] grid grid-cols-[2fr_1fr] gap-10 items-center justify-between md:grid-cols-1 md:items-start">
           <div className="md:text-center md:mt-[15vh]">
-            <h1>
-              {splitTitle.map((word, index) => (
-                <motion.span
-                  key={word}
-                  variants={variants}
-                  initial="initial"
-                  animate="animate"
-                  transition={{ duration: 1, delay: index * 0.2 }}
-                  style={{ display: 'inline-block', marginRight: '16px' }}
-                >
-                  {word}{' '}
-                </motion.span>
-              ))}
-            </h1>
+            <h1>{heading}</h1>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

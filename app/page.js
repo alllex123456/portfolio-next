@@ -33,7 +33,7 @@ export default function Home() {
         ? ro
         : en
     );
-  }, []);
+  }, [router]);
 
   const handleChangeLanguage = (lang) =>
     lang === 'en' ? setLanguage(en) : setLanguage(ro);

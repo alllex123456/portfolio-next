@@ -5,7 +5,7 @@
       rgba(255, 255, 255, 0.7) 60%,
       #fff 99.41%
     ),
-    url('/images/background-hero.jpeg'), lightgray 50%;
+    url('/images/background-hero.jpg'), lightgray 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }

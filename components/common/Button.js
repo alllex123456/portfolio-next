@@ -23,9 +23,7 @@ const Button = ({ size, type, label, onClick, className }) => {
       onClick={onClick}
     >
       <span
-        className={`capitalize pb-2 ${
-          size !== 'small' ? 'pt-[2px]' : 'pt-[4px]'
-        }`}
+        className={`capitalize ${size !== 'small' ? 'pt-[2px]' : 'pt-[4px]'}`}
       >
         {label}
       </span>
