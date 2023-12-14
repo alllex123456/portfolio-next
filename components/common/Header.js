@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useSearchParams } from 'next/navigation';
 
 import Link from 'next/link';
 import Logo from '../../assets/vectors/Logo';
@@ -9,8 +8,6 @@ import MobileNavigation from './MobileNavigation';
 import LanguageIcon from '@/assets/vectors/LanguageIcon';
 
 const Header = ({ links, language, handleChangeLanguage }) => {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get('lang');
   const [openMobileNav, setOpenMobileNav] = useState(false);
 
   return (
@@ -26,7 +23,7 @@ const Header = ({ links, language, handleChangeLanguage }) => {
           onClick={() => setOpenMobileNav(false)}
         ></div>
       )}
-      <Link href="{`/?lang=${language}`}">
+      <Link href="/">
         <Logo className="stroke-[--metal-100] md:w-[3rem]" />
       </Link>
       <DesktopNavigation lang={language} links={links} />
