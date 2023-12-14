@@ -13,14 +13,7 @@ const Button = ({ size, type, label, onClick, className }) => {
       ? 'text-[1.2rem] px-12 py-2'
       : 'text-[1.4rem] px-16 py-2 md:px-6 md:text-[1.4rem]';
 
-  const generateKey = (item, index) => {
-    if (typeof item === 'string') {
-      return `text-${item.toLowerCase()}-key-${index}`;
-    } else if (React.isValidElement(item) && item.type) {
-      return `component-${item.type.name || 'unknown'}-key-${index}`;
-    }
-    return `default-key-${index}`;
-  };
+  const ids = [1, 2, 3, 4];
 
   return (
     <button
@@ -32,7 +25,7 @@ const Button = ({ size, type, label, onClick, className }) => {
       {label.map((item, index) => {
         return (
           <span
-            key={generateKey(item, index)}
+            key={ids[index]}
             className={`${
               typeof item === 'string' && size !== 'small'
                 ? 'pt-[2px]'
